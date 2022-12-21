@@ -10,3 +10,87 @@ a {
     color: black;
     text-decoration: none;
 }
+
+.banner {
+    height: 400px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .container {
+        position: relative;
+
+        .name-section {
+            padding: .5em 1em;
+            background-color: #0282f9;
+            color: #fff;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.books {
+    background-color: #1c1c1c;
+
+    .card {
+        background: none;
+        height: 100%;
+        border: none;
+
+        img {
+            height: 200px;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        .text {
+            h5 {
+                font-size: .8rem;
+            }
+        }
+
+    }
+
+    .btn-more {
+        font-size: .8rem;
+        text-align: center;
+        padding: .5em 2em;
+        border-style: none;
+        background-color: #0282f9;
+        color: #fff;
+        font-weight: 600;
+        margin-bottom: 1em;
+    }
+}
+
+.icons {
+    padding: 2rem 0;
+    background-color: #0282f9;
+
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+
+    li {
+        margin-left: 1em;
+    }
+
+    img {
+        width: 50px;
+        margin-right: .5rem;
+    }
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

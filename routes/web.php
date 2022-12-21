@@ -1,5 +1,6 @@
 <?php
 
+use Dflydev\DotAccessData\Data;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +15,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $links = config('navLinks.links');
-    return view('home', compact('links'));
+    $data = [
+        "links" => config('navLinks.links'),
+        "books" => config('comics')
+    ];
+    return view('home', $data);
 })->name('home');
